@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Bstein’s Adventure</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game-wrapper">
+    <canvas id="game"></canvas>
+    <div id="hud">
+      <div id="score">Coins: 0</div>
+      <div id="msg">Find Goldstein’s Penny →</div>
+    </div>
+
+    <!-- Touch controls -->
+    <div id="controls">
+      <div class="cluster left">
+        <button class="btn" id="left" aria-label="Move left">◀</button>
+        <button class="btn" id="right" aria-label="Move right">▶</button>
+      </div>
+      <div class="cluster right">
+        <button class="btn big" id="jump" aria-label="Jump">⤴</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
